@@ -1,0 +1,7 @@
+*.sketch
+*.fig
+/figma/
+*.css.map
+*.xd
+.DS_Store
+.prettierignore
