@@ -15,7 +15,60 @@
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    <header>
+      <img src="./images/logo.svg" alt="Logo splitter" />
+    </header>
+    <main>
+      <form action="">
+        <fieldset>
+          <label for="bill">Bill</label>
+          <input type="number" name="bill" id="bill" />
+        </fieldset>
+        <fieldset>
+          <div>
+            <span>Select Tip %</span>
+          </div>
+          <input type="radio" name="percentage" id="five" />
+          <label for="five">5%</label>
+          <input type="radio" name="percentage" id="ten" />
+          <label for="ten">10%</label>
+          <input type="radio" name="percentage" id="fifteen" />
+          <label for="fifteen">15%</label>
+          <input type="radio" name="percentage" id="twenty-five" />
+          <label for="twenty-five">25%</label>
+          <input type="radio" name="percentage" id="fifty" />
+          <label for="fifty">50%</label>
+          <input
+            type="text"
+            name="percentage"
+            id="custom"
+            placeholder="Custom" />
+        </fieldset>
+        <fieldset>
+          <label for="">Number of People</label>
+          <input type="number" name="" id="" />
+        </fieldset>
+      </form>
+      <section>
+        <div>
+          <div>
+            <div>
+              <p>Tip Amount</p>
+              <span> / person</span>
+            </div>
+            $0.00
+          </div>
+          <div>
+            <div>
+              <p>Total</p>
+              <span> / person</span>
+            </div>
+            $0.00
+          </div>
+        </div>
+        <button>RESET</button>
+      </section>
+    </main>
+    Tip Amount / person Total / person Reset
   </body>
 </html>
