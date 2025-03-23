@@ -42,8 +42,99 @@ h3 {
 body {
   font-family: "Space Mono", monospace;
   font-weight: 700;
+  background-color: hsl(184, 14%, 56%);
+  gap: 87.86px;
 }
-body input {
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  max-width: 920px;
+  padding: 32px;
+  gap: 48px;
+}
+
+form {
+  flex: 1;
+  padding: 1rem 1rem 1rem 0;
+  gap: 20px;
+}
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+form .choice-title {
+  padding-bottom: 10px;
+}
+form .percent-inputs {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+form .percent-inputs input[type=radio] {
+  display: none;
+}
+form .percent-inputs input[placeholder=Custom] {
+  width: 100%;
+  background: none;
+  border: none;
+}
+form .percent-inputs .custom {
+  background-color: hsl(187, 47%, 96%);
+  color: hsl(187, 18%, 40%);
+  padding: 0 15px;
+}
+form .percent-inputs div {
+  flex: 1;
+  min-width: 30%;
+  background-color: hsl(183, 100%, 15%);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 24px;
+}
+form .percent-inputs label {
+  color: hsl(0, 0%, 100%);
+}
+form label {
+  color: hsl(191, 16%, 45%);
+}
+
+section {
+  flex: 1.05;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
+  padding: 40px;
+  gap: 122px;
+}
+section .results {
+  gap: 25px;
+}
+section .results p {
+  color: white;
+}
+section .results span {
+  font-size: 13px;
+  color: hsl(184, 14%, 56%);
+}
+section .results h1 {
+  font-size: 3rem;
+  color: hsl(172, 72%, 46%);
+}
+
+button {
+  width: 100%;
+  font-size: 20px;
+  padding: 9px;
+  background-color: hsl(172, 72%, 46%);
+  color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+}
+
+input {
   font-size: 1.5rem;
 }
 

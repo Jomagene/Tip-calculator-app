@@ -17,36 +17,48 @@
 
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
-  <body>
+  <body class="flex column items-center">
     <header>
       <img src="./images/logo.svg" alt="Logo splitter" />
     </header>
-    <main>
-      <form action="">
+    <main class="flex items-center">
+      <form class="flex column">
         <fieldset>
           <label for="bill">Bill</label>
           <input type="number" name="bill" id="bill" />
         </fieldset>
         <fieldset>
-          <div>
+          <label class="choice-title">
             <span>Select Tip %</span>
-          </div>
+          </label>
           <div class="percent-inputs">
-            <input type="radio" name="percentage" id="five" />
-            <label for="five">5%</label>
-            <input type="radio" name="percentage" id="ten" />
-            <label for="ten">10%</label>
-            <input type="radio" name="percentage" id="fifteen" />
-            <label for="fifteen">15%</label>
-            <input type="radio" name="percentage" id="twenty-five" />
-            <label for="twenty-five">25%</label>
-            <input type="radio" name="percentage" id="fifty" />
-            <label for="fifty">50%</label>
-            <input
-              type="number"
-              name="percentage"
-              id="custom"
-              placeholder="Custom" />
+            <div>
+              <input type="radio" name="percentage" id="five" />
+              <label for="five">5%</label>
+            </div>
+            <div>
+              <input type="radio" name="percentage" id="ten" />
+              <label for="ten">10%</label>
+            </div>
+            <div>
+              <input type="radio" name="percentage" id="fifteen" />
+              <label for="fifteen">15%</label>
+            </div>
+            <div>
+              <input type="radio" name="percentage" id="twenty-five" />
+              <label for="twenty-five">25%</label>
+            </div>
+            <div>
+              <input type="radio" name="percentage" id="fifty" />
+              <label for="fifty">50%</label>
+            </div>
+            <div class="custom">
+              <input
+                type="number"
+                name="percentage"
+                id="custom"
+                placeholder="Custom" />
+            </div>
           </div>
         </fieldset>
         <fieldset>
@@ -54,26 +66,26 @@
           <input type="number" name="" id="" />
         </fieldset>
       </form>
-      <section>
-        <div>
-          <div>
+
+      <section class="flex column">
+        <div class="results flex column">
+          <div class="result flex justify-between items-center">
             <div>
               <p>Tip Amount</p>
               <span> / person</span>
             </div>
-            $0.00
+            <h1>$4.27</h1>
           </div>
-          <div>
+          <div class="result flex justify-between items-center">
             <div>
               <p>Total</p>
               <span> / person</span>
             </div>
-            $0.00
+            <h1>$32.79</h1>
           </div>
         </div>
         <button>RESET</button>
       </section>
     </main>
-    Tip Amount / person Total / person Reset
   </body>
 </html>
